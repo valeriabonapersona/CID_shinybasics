@@ -17,8 +17,8 @@ fluidPage(
     
     mainPanel(
       tabsetPanel(
-        mod_plot_ui("plot_diet", "Lineplot")
-        # create a ui for the table
+        mod_plot_ui("plot_diet", "Lineplot"),
+        tabPanel("stats") # change this for table ui
       ) # closes tabsetPanel
     ) # main Panel
   ) # sidebarLayout
