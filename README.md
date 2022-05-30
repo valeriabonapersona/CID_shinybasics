@@ -3,6 +3,8 @@ Shiny basics tutorial for CID workshop
 
 ## Project organization.
 
+```
+.
 ├── .gitignore
 ├── CITATION.md
 ├── LICENSE.md
@@ -17,4 +19,4 @@ Shiny basics tutorial for CID workshop
 │   └── modules           <- Contains all modules. Module files start with mod_  
 ├── ui.R                  <- User interface of app
 └── server.R              <- Server of app
-
+```
