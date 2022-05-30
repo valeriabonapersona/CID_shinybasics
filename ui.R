@@ -12,6 +12,10 @@ fluidPage(
     ), # sidebarPanel
     
     mainPanel(
+      tabsetPanel(
+        tab(),
+        tab()
+      )
     ) # main Panel
   ) # sidebarLayout
 )
