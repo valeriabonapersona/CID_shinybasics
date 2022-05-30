@@ -8,6 +8,8 @@ source("src/general.R")
 source("src/preparation/prep_data.R")
 
 # source all functions
-source("src/fct_plotting.R")
-source("src/fct_filtering.R")
-source("src/mods.R")
+source("src/functions/fct_plotting.R")
+source("src/functions/fct_filtering.R")
+
+# source modules
+source("src/modules/mods.R")
