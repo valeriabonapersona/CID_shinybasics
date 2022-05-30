@@ -9,5 +9,4 @@ source("src/preparation/prep_data.R")
 
 # source all functions
 source("src/fct_plotting.R")
-source("src/fct_filtering.R")
-source("src/mods.R")
+
