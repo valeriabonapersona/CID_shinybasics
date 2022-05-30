@@ -1,5 +1,5 @@
 '
-  Script: run all functions
+  Script: run all required files for app
   Author: Valeria, CID workshop
 '
 
