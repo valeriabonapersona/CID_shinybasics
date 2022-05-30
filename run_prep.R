@@ -8,5 +8,5 @@ source("src/general.R")
 source("src/preparation/prep_data.R")
 
 # source all functions
-source("src/fct_plotting.R")
+source("src/functions/fct_plotting.R")
 
