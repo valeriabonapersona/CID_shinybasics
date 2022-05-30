@@ -10,15 +10,16 @@ fluidPage(
   sidebarLayout(
     sidebarPanel(
       h3("Select data of interest"),
-      fct_input("diet", "Diet", diet_groups), 
-      fct_input("sex", "Sex", c("female", "male")), 
-      fct_slider_input("time")
+      fct_input("diet", "Diet", diet_groups)
+      ## do here the same for sex
+      ## fct_slider_input() for "time"
+      ## all fct_input() need to be separated by a comma.
     ), # sidebarPanel
     
     mainPanel(
       tabsetPanel(
-        mod_plot_ui("plot_diet", "Lineplot"),
-        mod_table_ui("table_summ", "Summary")
+        tabPanel("plot"), 
+        tabPanel("stats")
       ) # closes tabsetPanel
     ) # main Panel
   ) # sidebarLayout
