@@ -11,5 +11,3 @@ source("src/preparation/prep_data.R")
 source("src/functions/fct_plotting.R")
 source("src/functions/fct_filtering.R")
 
-# source modules
-source("src/modules/mods.R")
