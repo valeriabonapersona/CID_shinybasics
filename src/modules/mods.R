@@ -21,25 +21,5 @@ mod_plot_server <- function(id, fun, df) {
 
 
 # Module Tables
-mod_table_ui <- function(id, title) {
-  
-  tabPanel(
-    title,
-    dataTableOutput(NS(id, "table"))
-  )
-  
-}
 
-
-mod_table_server <- function(id, df) {
-  
-  moduleServer(id, function(input, output, session) {
-    
-    table <- reactive({df() %>% group_by(sex, diet, time) %>% 
-        summarize(mean = mean(weight), sd = sd(weight), n = length(unique(chick)))})
-    output$table <- renderDataTable({table()})
-    
-  })
-  
-}
 
