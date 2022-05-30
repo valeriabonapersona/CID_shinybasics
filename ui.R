@@ -10,10 +10,9 @@ fluidPage(
   sidebarLayout(
     sidebarPanel(
       h3("Select data of interest"),
-      fct_input("diet", "Diet", diet_groups)
-      ## do here the same for sex
-      ## fct_slider_input() for "time"
-      ## all fct_input() need to be separated by a comma.
+      fct_input("diet", "Diet", diet_groups),
+      fct_input("sex", "Sex", c("female", "male")), 
+      fct_slider_input("time")
     ), # sidebarPanel
     
     mainPanel(
