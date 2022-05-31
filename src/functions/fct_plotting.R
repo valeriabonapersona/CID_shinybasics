@@ -27,3 +27,9 @@ scatter_plot_fun <- function(df,
       my_theme
   
   }
+
+table_fun <- function(df) {
+  df %>% 
+    group_by(sex, diet, time) %>% 
+      summarize(mean = mean(weight), sd = sd(weight), n = length(unique(chick)))
+}

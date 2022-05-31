@@ -31,12 +31,11 @@ mod_table_ui <- function(id, title) {
 }
 
 
-mod_table_server <- function(id, df) {
+mod_table_server <- function(id, fun, df) {
   
   moduleServer(id, function(input, output, session) {
     
-    table <- reactive({df() %>% group_by(sex, diet, time) %>% 
-        summarize(mean = mean(weight), sd = sd(weight), n = length(unique(chick)))})
+    table <- reactive({fun(df())})
     output$table <- renderDataTable({table()})
     
   })

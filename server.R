@@ -10,5 +10,5 @@ function(input, output, session) {
                              time >= input$time[[1]] & time <= input$time[[2]])})
   
   mod_plot_server("plot_diet", scatter_plot_fun, dat_ft)
-  mod_table_server("table_summ", dat_ft)
+  mod_table_server("table_summ", table_fun, dat_ft)
 }
